@@ -20,4 +20,4 @@ const WelcomePage = () => {
   return <div>WelcomePage</div>;
 };
 
-export default React.memo(WelcomePage);
+export default WelcomePage;
