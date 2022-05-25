@@ -1,8 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { checkAuthenticateService } from "./services/authenticateServices";
 
-export const sliceName = "authenticateSlice";
-
 const initialState = {
   checkAuthenticate: { data: null, loading: false, error: false },
 };
@@ -18,6 +16,8 @@ const checkAuthenticate = createAsyncThunk(
     }
   }
 );
+
+export const sliceName = "authenticateSlice";
 
 export const authenticateSlice = createSlice({
   name: sliceName,

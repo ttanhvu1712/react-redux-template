@@ -1,4 +1,4 @@
-import authenticate from "./authenticate";
+import authenticateReducer from "./authenticate";
 
 export { sliceName, actions, selector } from "./authenticate";
-export default authenticate;
+export default authenticateReducer;
